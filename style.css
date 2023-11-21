@@ -45,7 +45,7 @@ img{
 }
 .long{
     grid-column: 2/-1;
-    background-color: red;
+    background-color: var(--ligt-grey);
 }
 .top{
     background-color: var(--white);
@@ -99,4 +99,63 @@ button{
 }
 .btn{
     align-self: end;
+}
+.main{
+    display: grid;
+    grid-template-columns: 816px 1fr;
+    gap: 30px;
+}
+.chat{
+    grid-column: 2/-1;
+    font-size: 13px;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px 0px 10px 10px;
+    gap: 16px;
+}
+.card{
+    background-color: var(--white);
+    width: 400px;
+    height: 230px;
+    padding: 20px;
+    border-left: 8px solid orange;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.icons{
+    text-align: end;
+}
+.message{
+    background-color: var(--white);
+    width: 250px;
+    height: 310px;
+    border-radius: 5px;
+    padding: 8px;
+}
+.message > *{
+    margin-top: 10px;
+    font-size: 10px;
+}
+.message1,
+.message2{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.message3{
+    padding: 10px;
+}
+.treding{
+    margin-top: 20px;
+    width: 250px;
+}
+.other-accounts{
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+}
+.treding .account{
+    margin-bottom: 18px;
 }
